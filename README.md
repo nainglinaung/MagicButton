@@ -10,6 +10,11 @@ Converter
 Magic Button use [Parabaik](https://github.com/ngwestar/parabaik) converter.
 Please note that the accuracy of conversions are up to Parabaik converter.
 
+Installation and Usage 
+
+Magic Button is solely work on Chrome and You can install it over [Chrome App Store](https://chrome.google.com/webstore/detail/magic-button/anonbddkeifgmiekhengieaajehcpdcg) and If you like to try it on Firefox, alternative way is you can install [Magic Convertor](https://github.com/Arkar-Aung/magicConverter) 
+
+
 ~~It used [Paytan](https://github.com/trhura/paytan) first but found some bugs on Javascript version of the converter.~~
 Todo
 ---
