@@ -283,30 +283,31 @@ function Z1_Uni(input)
   var output=input;
 
    var tallAA = "\u102B";
-   var AA = "\u102C";
-   var vi = "\u102D";
+   var AA     = "\u102C";
+   var vi     = "\u102D";
+   
    // lone gyi tin
-   var ii = "\u102E";
-   var u = "\u102F";
-   var uu = "\u1030";
-   var ve = "\u1031";
-   var ai = "\u1032";
-   var ans = "\u1036";
-   var db = "\u1037";
+   var ii      = "\u102E";
+   var u       = "\u102F";
+   var uu      = "\u1030";
+   var ve      = "\u1031";
+   var ai      = "\u1032";
+   var ans     = "\u1036";
+   var db      = "\u1037";
    var visarga = "\u1038";
 
    var asat = "\u103A";
 
-   var ya = "\u103B";
-   var ra = "\u103C";
-   var wa = "\u103D";
-   var ha = "\u103E";
+   var ya   = "\u103B";
+   var ra   = "\u103C";
+   var wa   = "\u103D";
+   var ha   = "\u103E";
    var zero = "\u1040";
    
    
    output =  output.replace( /\u106A/g, " \u1009");
    output =  output.replace( /\u1025(?=[\u1039\u102C])/g, "\u1009"); //new
-    output =  output.replace( /\u1025\u102E/g, "\u1026"); //new
+   output =  output.replace( /\u1025\u102E/g, "\u1026"); //new
    output =  output.replace( /\u106B/g, "\u100A");
    output =  output.replace( /\u1090/g, "\u101B");
    output =  output.replace( /\u1040/g, zero);
@@ -314,6 +315,7 @@ function Z1_Uni(input)
    output =  output.replace( /\u108F/g, "\u1014");
    output =  output.replace( /\u1012/g, "\u1012");
    output =  output.replace( /\u1013/g, "\u1013");
+   
    /////////////
 
 
@@ -413,16 +415,10 @@ function Z1_Uni(input)
    // reordering ra
    
    output =  output.replace( /(\u103E)(\u103D)([\u103B\u103C])/g, "$3$2$1");
-    output =  output.replace( /(\u103E)([\u103B\u103C])/g, "$2$1");
-    
-    output =  output.replace( /(\u103D)([\u103B\u103C])/g, "$2$1");
+   output =  output.replace( /(\u103E)([\u103B\u103C])/g, "$2$1");
+   output =  output.replace( /(\u103D)([\u103B\u103C])/g, "$2$1");
    
-  
-
-
-  
-   
-   
+ 
    output = output.replace(/(([\u1000-\u101C\u101E-\u102A\u102C\u102E-\u103F\u104C-\u109F]))(\u1040)(?=\u0020)?/g, function($0, $1)
    {
       return $1 ? $1 + '\u101D' : $0 + $1;
